@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #b3b3b3, #050505);
+        }
+
+        .container {
+            display: flex;
+            width: 800px;
+            background: rgb(0, 0, 0);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .image-container {
+            width: 50%;
+            overflow: hidden; /* Key for containing the image */
+        }
+        .image-container img {
+            width: 100%;
+            height: 120%;
+            object-fit: cover; /* or contain if you want to fit the whole image */
+            display: block; /* Prevents a small space below the image */
+        }
+
+
+        .image-container img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-container label { /* Style the labels */
+            display: block; /* Makes each label and input stack */
+            margin-bottom: 5px; /* Adds space between label and input */
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px; /* Space between inputs */
+            border: 1px solid #090909;
+            border-radius: 5px;
+            margin-left: 3%;
+        }
+
+        .form-container button {
+            width: 50%;
+            padding: 10px;
+            background: #292828;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+            margin-left: 30%;
+            margin-bottom: 10%;
+        }
+
+        .t1{
+            margin-left: 10%;
+            color: white;
+        }
+        .form-container button:hover {
+            background: #ffffff; /* Slightly darker pink */
+            box-shadow: 0 0 10px rgba(6, 6, 6, 0.5); /* Glowing shadow */
+            color: #292828;
+        }
+        #t2{
+            text-align: center;
+            margin-top: 10%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="Epic-Games-logo.avif" alt="EpicGames">
+        </div>
+        <div class="form-container">
+            <h2 class="t1" id="t2">Sign Up</h2>
+            <label class="t1" for="fullname">Full Name<input type="text" id="fullname" placeholder="Full Name" required></label>
+            <label class="t1" for="email">Email Address<input type="email" id="email" placeholder="Email Address" required></label>
+            <label class="t1" for="username">Username<input type="text" id="username" placeholder="Username" required></label>
+            <label class="t1" for="password">Password<input type="password" id="password" placeholder="Password" required></label>
+            <label class="t1" for="repeat-password">Repeat Password<input type="password" id="repeat-password" placeholder="Repeat Password" required></label>
+            <button>Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
